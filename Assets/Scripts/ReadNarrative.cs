@@ -27,7 +27,7 @@ public class ReadNarrative : MonoBehaviour
     void RefreshView()
     {
         // Remove all the UI on screen
-          RemoveChildren();
+         // RemoveChildren();
         // Display all the choices, if there are any!
         if (story.currentChoices.Count > 0)
         {
@@ -84,9 +84,11 @@ public class ReadNarrative : MonoBehaviour
     // Creates a button showing the choice text
     void CreateContentView(string text)
     {
-        TMP_Text storyText = Instantiate(textPrefab.GetComponentInChildren<TMP_Text>()) as TMP_Text;
-        storyText.text = text;
-        storyText.transform.SetParent(canvas.transform, false);
+       // TMP_Text storyText = Instantiate(textPrefab) as TMP_Text;
+        textPrefab.text = text;
+        //Debug.Log("coloer" + storyText.color);
+        //storyText.transform.SetParent(canvas.transform, false);
+        //storyText.transform.SetParent(canvas.transform, false);
     }
 
     // Creates a button showing the choice text
@@ -152,7 +154,7 @@ public class ReadNarrative : MonoBehaviour
 
     // UI Prefabs
     [SerializeField]
-    private Image textPrefab;
+    private TMP_Text textPrefab;
     [SerializeField]
     private Button buttonPrefab;
 
