@@ -26,8 +26,6 @@ public class ReadNarrative : MonoBehaviour
     // Continues over all the lines of text, then displays all the choices. If there are no choices, the story is finished!
     void RefreshView()
     {
-        // Remove all the UI on screen
-         // RemoveChildren();
         // Display all the choices, if there are any!
         if (story.currentChoices.Count > 0)
         {
@@ -109,19 +107,11 @@ public class ReadNarrative : MonoBehaviour
         return choice;
     }
 
-    void RemoveChildren()
-    {
-        int childCount = canvas.transform.childCount;
-        for (int i = childCount - 1; i >= 0; --i)
-        {
-            GameObject.Destroy(canvas.transform.GetChild(i).gameObject);
-        }
-    }
-
     void checkTags(string tag)
     {
         switch (tag)
         {
+            //CAESES FOR CHARACTERS 
             case "Narrator":
                 //No change
                 Debug.Log(tag);
@@ -137,6 +127,23 @@ public class ReadNarrative : MonoBehaviour
                 Debug.Log(tag);
                 //Show Gigi
                 break;
+
+            //CASES FOR BACKGROUNDS
+            case "Background_Bedroom":
+                background.sprite = listOfBackgrounds[0];
+                break;
+            case "Background_Street":
+                background.sprite = listOfBackgrounds[1];
+                break;
+            case "Background_Cafe":
+                background.sprite = listOfBackgrounds[2];
+                break; 
+
+            //CASES FOR MUSIC
+
+            //CASES FOR SFX
+
+            //CASES FOR VOICE ACTING
             default:
                 break;
         }
@@ -158,5 +165,11 @@ public class ReadNarrative : MonoBehaviour
     [SerializeField]
     private Button buttonPrefab;
 
+    //CHARACTERS
     public Image[] listOfCharacter;
+
+    //
+    public Image background;
+
+    public Sprite[] listOfBackgrounds; 
 }
