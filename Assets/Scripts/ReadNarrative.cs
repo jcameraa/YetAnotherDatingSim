@@ -234,297 +234,283 @@ public class ReadNarrative : MonoBehaviour
 
 
 
-            //CASES FOR VOICE ACTING----------------------------------------------------------------------------
+            //CASES FOR VOICE ACTING---------------------------------------------------------------------------- 
 
-
-            case "HotDamn_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "ImSorry_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "ItsFine_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "HereUseThis_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Annoyed_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "ImGigi_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "ImLyla_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "CockyLaugh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Laugh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "InterestedOh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Muffins_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Stuttering1_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "ItsADate_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Stuttering_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "LetsGo_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "DisappointedSign_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "LookOutLyla_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "DoIKnowYou_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Um_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Wait_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "DisappoinedOh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "ExcuseMe_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "SoUhh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Stuttering2_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "LylaName_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "NoRing_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Time_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Right_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Recommend_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Honey_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-
-            case "Recognize_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Mistaken_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "AnnoyedJ_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Nonsense_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Firefighter_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Doctor_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Gasp1_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "AnnoyedK_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Groan_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "Gasp2_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
+            // GIGI VA
             case "Angry_VA":
                 VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+                VAAudio.Play();
                 break;
 
-            case "Goddamnit_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+            // MISSING: AngryHey 
+
+            case "Annoyed_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[2];
+                VAAudio.Play();
                 break;
 
             case "Confused_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "No_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "LetMeGoButMoreFirm_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "ImTryingToSaveUs_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "WTF_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "FellInLove_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
-                break;
-
-            case "MarryMe_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[3];
+                VAAudio.Play();
                 break;
 
             case "DisappointedOh_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[4];
+                VAAudio.Play();
                 break;
 
-            case "LetMeGoFirmer_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+            case "DisappointedSigh_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[5];
+                VAAudio.Play();
                 break;
+
+            case "FellInLove_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[6];
+                VAAudio.Play();
+                break;
+
+            case "HereUseThis_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[7];
+                VAAudio.Play();
+                break;
+
+            // MISSING: Hey
+
+            // MISSING: IDo
 
             case "ILoveYou_VA":
-                VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[10];
+                VAAudio.Play();
                 break;
 
+            case "ImGigi_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[11];
+                VAAudio.Play();
+                break;
+
+            case "ImSorry_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[12];
+                VAAudio.Play();
+                break;
+
+            case "ImTryingToSaveUs_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[13];
+                VAAudio.Play();
+                break;
+
+            case "InterestedOh_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[14];
+                VAAudio.Play();
+                break;
+
+            case "Laugh_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[15];
+                VAAudio.Play();
+                break;
+
+            case "LookOutLyla_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[16];
+                VAAudio.Play();
+                break;
+
+            case "LylaName_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[17];
+                VAAudio.Play();
+                break;
+
+            case "MarryMe_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[18];
+                VAAudio.Play();
+                break;
+
+            case "Muffins_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[19];
+                VAAudio.Play();
+                break;
+
+            case "No_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[20];
+                VAAudio.Play();
+                break;
+
+            case "Stuttering1_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[21];
+                VAAudio.Play();
+                break;
+
+            case "Stuttering2_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[22];
+                VAAudio.Play();
+                break;
+
+            case "Um_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[23];
+                VAAudio.Play();
+                break;
+
+            case "Wait_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[24];
+                VAAudio.Play();
+                break;
+
+            // LYLA VA
+            case "CockyLaugh_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[38];
+                VAAudio.Play();
+                break;
+
+            case "DoIKnowYou_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[40];
+                VAAudio.Play();
+                break;
+
+            case "ExcuseMe_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[41];
+                VAAudio.Play();
+                break;
+
+            // MISSING: ExcuseMeButSassier
+
+            // NO MATCH
             case "FuckYou_VA":
                 VAAudio.GetComponent<AudioSource>().clip = listOfVA[0];
-                SFXAudio.Play();
+                VAAudio.Play();
+                break;
+
+            case "Gasp1_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[43];
+                VAAudio.Play();
+                break;
+
+            case "Gasp2_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[44];
+                VAAudio.Play();
+                break;
+
+            case "Goddamnit_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[45];
+                VAAudio.Play();
+                break;
+
+            case "Groan_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[46];
+                VAAudio.Play();
+                break;
+
+            case "HotDamn_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[47];
+                VAAudio.Play();
+                break;
+
+            case "ImLyla_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[48];
+                VAAudio.Play();
+                break;
+
+            case "ItsADate_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[49];
+                VAAudio.Play();
+                break;
+
+            case "ItsFine_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[50];
+                VAAudio.Play();
+                break;
+
+            case "LetMeGo_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[51];
+                VAAudio.Play();
+                break;
+
+            case "LetMeGoButMoreFirm_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[52];
+                VAAudio.Play();
+                break;
+
+            case "LetsGo_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[53];
+                VAAudio.Play();
+                break;
+
+            case "SoUhh_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[54];
+                VAAudio.Play();
+                break;
+
+            case "Stuttering_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[55];
+                VAAudio.Play();
+                break;
+
+            // MISSING: TooDamnHot
+
+            // MISSING: Wait
+
+            case "WTF_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[58];
+                VAAudio.Play();
+                break;
+
+            // KRISTLE VA
+            case "AnnoyedK_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[31];
+                VAAudio.Play();
+                break;
+
+            case "Honey_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[32];
+                VAAudio.Play();
+                break;
+
+            case "Mistaken_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[33];
+                VAAudio.Play();
+                break;
+
+            case "Nonsense_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[34];
+                VAAudio.Play();
+                break;
+
+            case "NoRing_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[35];
+                VAAudio.Play();
+                break;
+
+            case "Recognized_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[36];
+                VAAudio.Play();
+                break;
+
+            // JEROLD VA
+            case "AnnoyedJ_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[25];
+                VAAudio.Play();
+                break;
+
+            case "Doctor_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[26];
+                VAAudio.Play();
+                break;
+
+            case "Firefighter_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[27];
+                VAAudio.Play();
+                break;
+
+            case "Recommend_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[28];
+                VAAudio.Play();
+                break;
+
+            case "Right_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[29];
+                VAAudio.Play();
+                break;
+
+            case "Time_VA":
+                VAAudio.GetComponent<AudioSource>().clip = listOfVA[30];
+                VAAudio.Play();
                 break;
 
             default:
