@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0de568a24f5f07458048d7048d3b4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSONAsset: {fileID: 4900000, guid: 8f661343fb1f5114a8b76039f2e12370, type: 3}
+  inkJSONAsset: {fileID: 4900000, guid: 8c49cee527d27c7418ab355f3f245689, type: 3}
   canvas: {fileID: 504021586}
   textPrefab: {fileID: 1000251306}
   buttonPrefab: {fileID: 7333619360865397627, guid: 37c108a6c38964f79a6621eccb33ddc1,
@@ -749,6 +749,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8fd714c48f35a7049bd5f5a5ca66b37b, type: 3}
   - {fileID: 8300000, guid: f84d7ba7d0548bf44b172638eb8be2c4, type: 3}
   - {fileID: 8300000, guid: f1fcafa5564cc6e4188e2275bb3251b9, type: 3}
+  VAAudio: {fileID: 0}
+  listOfVA: []
 --- !u!224 &1690910214 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 803622970542667939, guid: 9f78a54d5917478469c055800e979d74,
