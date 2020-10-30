@@ -198,7 +198,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -620,8 +620,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSONAsset: {fileID: 4900000, guid: 9ad998b0870e08e4db1e07423d42957f, type: 3}
   canvas: {fileID: 246542922}
-  textPrefab: {fileID: 11456674, guid: 1aab6ef84d87c416f8f0b3e1ef3d77d2, type: 3}
-  buttonPrefab: {fileID: 11455116, guid: 37c108a6c38964f79a6621eccb33ddc1, type: 3}
+  textPrefab: {fileID: 6718538132028277235, guid: f551070d7b65e14449f2a1806be3b687,
+    type: 3}
+  buttonPrefab: {fileID: 7333619360865397627, guid: 37c108a6c38964f79a6621eccb33ddc1,
+    type: 3}
   listOfCharacter:
   - {fileID: 1908163971}
   - {fileID: 1690910215}

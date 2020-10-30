@@ -1,8 +1,10 @@
 ﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
+using TMPro; 
 public class ReadNarrative : MonoBehaviour
 {
 
@@ -82,7 +84,7 @@ public class ReadNarrative : MonoBehaviour
     // Creates a button showing the choice text
     void CreateContentView(string text)
     {
-        Text storyText = Instantiate(textPrefab) as Text;
+        TMP_Text storyText = Instantiate(textPrefab.GetComponentInChildren<TMP_Text>()) as TMP_Text;
         storyText.text = text;
         storyText.transform.SetParent(canvas.transform, false);
     }
@@ -150,7 +152,7 @@ public class ReadNarrative : MonoBehaviour
 
     // UI Prefabs
     [SerializeField]
-    private Text textPrefab;
+    private Image textPrefab;
     [SerializeField]
     private Button buttonPrefab;
 
