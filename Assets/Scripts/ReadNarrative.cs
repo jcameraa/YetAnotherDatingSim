@@ -77,6 +77,11 @@ public class ReadNarrative : MonoBehaviour
     {
         story.ChooseChoiceIndex(choice.index);
         RefreshView();
+        // Destroy all children in layout group
+        foreach(Transform child in canvas.transform.Find("ChoiceView").transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
     }
 
     // Creates a button showing the choice text
@@ -84,7 +89,7 @@ public class ReadNarrative : MonoBehaviour
     {
        // TMP_Text storyText = Instantiate(textPrefab) as TMP_Text;
         textPrefab.text = text;
-        //Debug.Log("coloer" + storyText.color);
+        //Debug.Log("color" + storyText.color);
         //storyText.transform.SetParent(canvas.transform, false);
         //storyText.transform.SetParent(canvas.transform, false);
     }
@@ -94,10 +99,10 @@ public class ReadNarrative : MonoBehaviour
     {
         // Creates the button from a prefab
         Button choice = Instantiate(buttonPrefab) as Button;
-        choice.transform.SetParent(canvas.transform, false);
+        choice.transform.SetParent(canvas.transform.Find("ChoiceView").transform);
 
         // Gets the text from the button prefab
-        Text choiceText = choice.GetComponentInChildren<Text>();
+        TMP_Text choiceText = choice.GetComponentInChildren<TMP_Text>();
         choiceText.text = text;
 
         // Make the button expand to fit the text
