@@ -137,11 +137,40 @@ public class ReadNarrative : MonoBehaviour
                 break;
             case "Background_Cafe":
                 background.sprite = listOfBackgrounds[2];
-                break; 
+                break;
 
             //CASES FOR MUSIC
 
+
+
             //CASES FOR SFX
+
+            case "Thud_Sound":
+                SFXAudio.GetComponent<AudioSource>().clip = listOfSFX[5];
+                SFXAudio.Play();
+                break;
+
+            case "Siren_Sound":
+                SFXAudio.GetComponent<AudioSource>().clip = listOfSFX[4];
+                SFXAudio.Play();
+                break;
+
+            case "BusCrash_Sound":
+                SFXAudio.GetComponent<AudioSource>().clip = listOfSFX[2];
+                SFXAudio.Play();
+                break;
+
+            case "BirdSounds_Sound":
+                SFXAudio.GetComponent<AudioSource>().clip = listOfSFX[2];
+                SFXAudio.Play();
+                break;
+
+            case "AlarmClock_Sound":
+                SFXAudio.GetComponent<AudioSource>().clip = listOfSFX[0];
+                SFXAudio.Play();
+                break;
+
+
 
             //CASES FOR VOICE ACTING
             default:
@@ -168,8 +197,18 @@ public class ReadNarrative : MonoBehaviour
     //CHARACTERS
     public Image[] listOfCharacter;
 
-    //
+    //BACKGROUNDS
     public Image background;
 
-    public Sprite[] listOfBackgrounds; 
+    public Sprite[] listOfBackgrounds;
+
+    //MUSIC
+    public AudioSource mainAudio;
+
+    public AudioClip[] listOfMainAudio;
+
+    //SFX
+    public AudioSource SFXAudio;
+
+    public AudioClip[] listOfSFX; 
 }
