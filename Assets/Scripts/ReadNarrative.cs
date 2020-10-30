@@ -117,21 +117,137 @@ public class ReadNarrative : MonoBehaviour
         switch (tag)
         {
             //CAESES FOR CHARACTERS 
+            //Setting Activitie
             case "Narrator":
                 //No change
                 Debug.Log(tag);
                 break;
             case "Lyla":
-
-                Debug.Log(tag);
                 listOfCharacter[0].gameObject.SetActive(true);
-                //Show Lyla
                 break;
             case "Gigi":
                 listOfCharacter[1].gameObject.SetActive(true);
-                Debug.Log(tag);
-                //Show Gigi
                 break;
+            case "Jerold":
+                listOfCharacter[2].gameObject.SetActive(true);
+                break;
+            case "Kristle":
+                listOfCharacter[3].gameObject.SetActive(true);
+                break;
+            case "NoGigi":
+                listOfCharacter[1].gameObject.SetActive(false);
+                break;
+            case "NoJerold":
+                listOfCharacter[2].gameObject.SetActive(false);
+                break;
+            case "NoKristle":
+                listOfCharacter[3].gameObject.SetActive(false);
+                break;
+            case "Nothing":
+                listOfCharacter[0].gameObject.SetActive(false);
+                listOfCharacter[1].gameObject.SetActive(false);
+                listOfCharacter[2].gameObject.SetActive(false);
+                listOfCharacter[3].gameObject.SetActive(false);
+                break;
+
+            //Cases for Lyla
+
+
+            case "Lyla_Angry":
+
+                listOfCharacter[0].sprite = charactersOfAll[0];
+                break;
+
+
+            case "Lyla_Surprised":
+
+                listOfCharacter[0].sprite = charactersOfAll[1];
+                break;
+
+
+            case "Lyla_Neutral":
+
+                listOfCharacter[0].sprite = charactersOfAll[2];
+                break;
+
+
+            case "Lyla_Smug":
+
+                listOfCharacter[0].sprite = charactersOfAll[3];
+                break;
+
+            /////GIGI
+            case "Gigi_Happy":
+
+                listOfCharacter[1].sprite = charactersOfAll[4];
+                break;
+
+
+            case "Gigi_Angry":
+                listOfCharacter[1].sprite = charactersOfAll[5];
+
+                break;
+
+
+            case "Gigi_Surprised":
+                listOfCharacter[1].sprite = charactersOfAll[6];
+
+                break;
+
+
+            case "Gigi_Neutral":
+                listOfCharacter[1].sprite = charactersOfAll[7];
+
+                break;
+
+
+            case "Gigi_Eldritch":
+                listOfCharacter[1].sprite = charactersOfAll[8];
+
+                break;
+                //////Kristle
+
+            case "Kristle_Happy":
+                listOfCharacter[3].sprite = charactersOfAll[9];
+
+                break;
+
+
+            case "Kristle_Angry":
+
+                listOfCharacter[3].sprite = charactersOfAll[10];
+                break;
+
+
+            case "Kristle_Surprised":
+
+                listOfCharacter[3].sprite = charactersOfAll[11];
+                break;
+
+
+            case "Kristle_Neutral":
+
+                listOfCharacter[3].sprite = charactersOfAll[12];
+                break;
+
+            ///JEROLD
+            ///
+
+            case "Jerold_Happy":
+                listOfCharacter[2].sprite = charactersOfAll[13];
+                break;
+
+
+            case "Jerold_Angry":
+                listOfCharacter[2].sprite = charactersOfAll[14];
+                break;
+
+
+            case "Jerold_Neutral":
+                listOfCharacter[2].sprite = charactersOfAll[15];
+
+                break;
+
 
             //CASES FOR BACKGROUNDS --------------------------------------------------------
             case "Background_Bedroom":
@@ -536,6 +652,8 @@ public class ReadNarrative : MonoBehaviour
 
     //CHARACTERS
     public Image[] listOfCharacter;
+
+    public Sprite[] charactersOfAll;
 
     //BACKGROUNDS
     public Image background;
