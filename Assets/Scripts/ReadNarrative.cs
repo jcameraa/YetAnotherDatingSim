@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
 public class ReadNarrative : MonoBehaviour
 {
 
@@ -67,7 +67,7 @@ public class ReadNarrative : MonoBehaviour
     {
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0) || Input.GetButtonUp("Submit"));
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetButtonUp("Submit"));
-        yield return null; 
+        yield return null;
         RefreshView();
         canContinue = true;
     }
@@ -78,7 +78,7 @@ public class ReadNarrative : MonoBehaviour
         story.ChooseChoiceIndex(choice.index);
         RefreshView();
         // Destroy all children in layout group
-        foreach(Transform child in canvas.transform.Find("ChoiceView").transform)
+        foreach (Transform child in canvas.transform.Find("ChoiceView").transform)
         {
             GameObject.Destroy(child.gameObject);
         }
@@ -87,7 +87,7 @@ public class ReadNarrative : MonoBehaviour
     // Creates a button showing the choice text
     void CreateContentView(string text)
     {
-       // TMP_Text storyText = Instantiate(textPrefab) as TMP_Text;
+        // TMP_Text storyText = Instantiate(textPrefab) as TMP_Text;
         textPrefab.text = text;
         //Debug.Log("color" + storyText.color);
         //storyText.transform.SetParent(canvas.transform, false);
@@ -106,8 +106,8 @@ public class ReadNarrative : MonoBehaviour
         choiceText.text = text;
 
         // Make the button expand to fit the text
-        HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
-        layoutGroup.childForceExpandHeight = false;
+        // HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
+        // layoutGroup.childForceExpandHeight = false;
 
         return choice;
     }
@@ -118,23 +118,35 @@ public class ReadNarrative : MonoBehaviour
         {
             //CAESES FOR CHARACTERS 
             //Setting Activitie
-            case "Narrator":
+            case "Narration":
                 //No change
                 Debug.Log(tag);
+                speakerTextPrefab.text = "Narration";
+                break;
+            case "Barista":
+                speakerTextPrefab.text = "Barista";
+                break;
+            case "Amy":
+                speakerTextPrefab.text = "Amy";
                 break;
             case "Lyla":
+                speakerTextPrefab.text = "Lyla";
                 listOfCharacter[0].gameObject.SetActive(true);
                 break;
             case "Gigi":
+                speakerTextPrefab.text = "Gigi";
                 listOfCharacter[1].gameObject.SetActive(true);
                 break;
             case "Jerold":
+                speakerTextPrefab.text = "Jerold";
                 listOfCharacter[2].gameObject.SetActive(true);
                 break;
             case "Kristle":
+                speakerTextPrefab.text = "Kristle";
                 listOfCharacter[3].gameObject.SetActive(true);
                 break;
             case "NoGigi":
+                Debug.Log("No Gigi");
                 listOfCharacter[1].gameObject.SetActive(false);
                 break;
             case "NoJerold":
@@ -154,97 +166,165 @@ public class ReadNarrative : MonoBehaviour
 
 
             case "Lyla_Angry":
-
-                listOfCharacter[0].sprite = charactersOfAll[0];
+                if (story.currentTags.Contains("Lyla_Wedding"))
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[4];
+                }
+                else
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[0];
+                }
+                
                 break;
 
 
-            case "Lyla_Surprised":
-
-                listOfCharacter[0].sprite = charactersOfAll[1];
+            case "Lyla_Surprise":
+                if (story.currentTags.Contains("Lyla_Wedding"))
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[5];
+                }
+                else
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[1];
+                }
                 break;
 
 
             case "Lyla_Neutral":
-
-                listOfCharacter[0].sprite = charactersOfAll[2];
+                if (story.currentTags.Contains("Lyla_Wedding"))
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[6];
+                }
+                else
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[2];
+                }
                 break;
 
 
             case "Lyla_Smug":
-
-                listOfCharacter[0].sprite = charactersOfAll[3];
+                if (story.currentTags.Contains("Lyla_Wedding"))
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[7];
+                }
+                else
+                {
+                    listOfCharacter[0].sprite = charactersOfAll[3];
+                }
                 break;
 
-            /////GIGI
+            /////GIGI            
             case "Gigi_Happy":
-
-                listOfCharacter[1].sprite = charactersOfAll[4];
+                if (story.currentTags.Contains("Gigi_PJ"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[12];
+                }
+                else if (story.currentTags.Contains("Gigi_Wedding"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[16];
+                }
+                else
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[8];
+                }                
                 break;
 
 
             case "Gigi_Angry":
-                listOfCharacter[1].sprite = charactersOfAll[5];
+                if (story.currentTags.Contains("Gigi_PJ"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[13];
+                }
+                else if (story.currentTags.Contains("Gigi_Wedding"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[17];
+                }
+                else
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[9];
+                }
 
                 break;
 
 
             case "Gigi_Surprised":
-                listOfCharacter[1].sprite = charactersOfAll[6];
+                if (story.currentTags.Contains("Gigi_PJ"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[14];
+                }
+                else if (story.currentTags.Contains("Gigi_Wedding"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[18];
+                }
+                else
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[10];
+                }
 
                 break;
 
 
             case "Gigi_Neutral":
-                listOfCharacter[1].sprite = charactersOfAll[7];
+                if (story.currentTags.Contains("Gigi_PJ"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[15];
+                }
+                else if (story.currentTags.Contains("Gigi_Wedding"))
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[19];
+                }
+                else
+                {
+                    listOfCharacter[1].sprite = charactersOfAll[11];
+                }
 
                 break;
 
 
             case "Gigi_Eldritch":
-                listOfCharacter[1].sprite = charactersOfAll[8];
+                listOfCharacter[1].sprite = charactersOfAll[20];
 
                 break;
-                //////Kristle
 
+            //////Kristle
             case "Kristle_Happy":
-                listOfCharacter[3].sprite = charactersOfAll[9];
+                listOfCharacter[3].sprite = charactersOfAll[21];
 
                 break;
 
 
             case "Kristle_Angry":
 
-                listOfCharacter[3].sprite = charactersOfAll[10];
+                listOfCharacter[3].sprite = charactersOfAll[22];
                 break;
 
 
             case "Kristle_Surprised":
 
-                listOfCharacter[3].sprite = charactersOfAll[11];
+                listOfCharacter[3].sprite = charactersOfAll[23];
                 break;
 
 
             case "Kristle_Neutral":
 
-                listOfCharacter[3].sprite = charactersOfAll[12];
+                listOfCharacter[3].sprite = charactersOfAll[24];
                 break;
 
             ///JEROLD
             ///
 
             case "Jerold_Happy":
-                listOfCharacter[2].sprite = charactersOfAll[13];
+                listOfCharacter[2].sprite = charactersOfAll[25];
                 break;
 
 
             case "Jerold_Angry":
-                listOfCharacter[2].sprite = charactersOfAll[14];
+                listOfCharacter[2].sprite = charactersOfAll[26];
                 break;
 
 
             case "Jerold_Neutral":
-                listOfCharacter[2].sprite = charactersOfAll[15];
+                listOfCharacter[2].sprite = charactersOfAll[27];
 
                 break;
 
@@ -642,11 +722,13 @@ public class ReadNarrative : MonoBehaviour
     [SerializeField]
     private Canvas canvas;
 
-    private bool canContinue = true; 
+    private bool canContinue = true;
 
     // UI Prefabs
     [SerializeField]
     private TMP_Text textPrefab;
+    [SerializeField]
+    private TMP_Text speakerTextPrefab;
     [SerializeField]
     private Button buttonPrefab;
 
