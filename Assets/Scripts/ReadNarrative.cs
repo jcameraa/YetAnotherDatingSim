@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 public class ReadNarrative : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class ReadNarrative : MonoBehaviour
             Button choice = CreateChoiceView("End of story.\nRestart?");
             choice.onClick.AddListener(delegate
             {
-                StartStory();
+                SceneManager.LoadScene(0);
             });
         }
     }
